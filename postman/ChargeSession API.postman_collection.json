@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "47c5a91c-55c7-4e63-82ba-52a48c1dd5e7",
+		"name": "ChargeSession API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2294643"
+	},
+	"item": [
+		{
+			"name": "Get All ChargeSessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/chargesessions",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chargesessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add ChargeSession",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"2\",\n    \"watt\": 420,\n    \"vin\": \"E234234eewe\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/chargesessions",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chargesessions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get ChargeSession",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/chargesessions/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chargesessions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update ChargeSession",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": \"11111\",\n    \"watts\": 415,\n    \"vin\": \"E34435545665\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/chargesessions/11111",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chargesessions",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete ChargeSession",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/chargesessions/11111",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"chargesessions",
+						"11111"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
